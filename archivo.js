@@ -20,3 +20,19 @@ planetas.forEach(p => {
 
     contenedor.appendChild(card);
 });
+// js/contact.js
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contact-form');
+  const feedback = document.getElementById('form-feedback');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // sin backend, evitamos reload
+    feedback.style.display = 'block';
+    feedback.textContent = 'Mensaje simulado enviado. Gracias 😊';
+    feedback.style.color = 'green';
+    // opcional: limpiar campos
+    form.reset();
+  });
+});
