@@ -18,12 +18,17 @@
         <p>MiniSitio creado para práctica de HTML, CSS y JS</p>
     </footer>
 
+ feat/contacto-v5
     <!-- --- Sección Contacto --- -->
+
+    <!-- --- Sección Contacto (agregar en index.html) --- -->
+ main
     <section id="contacto" class="contact-section">
         <div class="container">
             <h2>Contacto</h2>
             <p>¿Tienes dudas? Escríbeme usando el formulario.</p>
 
+ feat/contacto-v5
             <form id="contact-form" action="#" method="post" novalidate autocomplete="off">
                 
                 <label for="name">Nombre</label>
@@ -44,5 +49,26 @@
     <!-- --- /Sección Contacto --- -->
 
     <script src="archivo.js"></script>
+
+            <form id="contact-form" action="#" method="post" novalidate>
+              <label for="name">Nombre</label>
+             <input id="name" name="name" type="text" required placeholder="Tu nombre">
+
+             <label for="email">Correo</label>
+              <input id="email" name="email" type="email" required placeholder="tu@email.com">
+
+              <label for="message">Mensaje</label>
+             <textarea id="message" name="message" rows="4" required placeholder="Escribe tu mensaje"></textarea>
+
+             <button type="submit" class="btn">Enviar</button>
+             <p id="form-feedback" aria-live="polite" style="display:none"></p>
+            </form>
+     </div>
+  </section>
+<!-- --- /Sección Contacto --- -->
+
+
+    <script src="archivo.js"></script>
+ main
 </body>
 </html>
