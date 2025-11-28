@@ -40,8 +40,25 @@ document.addEventListener('DOMContentLoaded', function () {
     form.reset();
 
     // ocultar mensaje a los 3 segundos
-    setTimeout(() => {
-      feedback.style.display = 'none';
-    }, 3000);
+    let hideTimeout;
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // mostrar feedback
+  feedback.style.display = 'block';
+  feedback.textContent = 'Mensaje simulado enviado. Gracias 😊';
+  feedback.classList.add('success');
+
+  // limpiar timeout anterior
+  if (hideTimeout) clearTimeout(hideTimeout);
+
+  // ocultar después de 3 segundos
+  hideTimeout = setTimeout(() => {
+    feedback.style.display = 'none';
+  }, 3000);
+
+  form.reset();
+});
   });
 });
