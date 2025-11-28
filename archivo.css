@@ -46,16 +46,30 @@ footer {
     background: #131a33;
     border-top: 2px solid #3c4a7d;
 }
+ feat/contacto-v5
+ main
 /* -- estilos sección contacto -- */
 .contact-section {
   padding: 40px 16px;
   background: #f9f9fb;
+ feat/contacto-v5
+  color: #000;
+ main
 }
 
 .contact-section .container { max-width: 900px; margin: 0 auto; }
 
 .contact-section h2 { font-size: 1.8rem; margin-bottom: 8px; }
+feat/contacto-v5
+
+.contact-section label { 
+  display:block; 
+  margin-top:12px; 
+  font-weight:600; 
+}
+
 .contact-section label { display:block; margin-top:12px; font-weight:600; }
+ main
 .contact-section input,
 .contact-section textarea {
   width:100%;
@@ -66,10 +80,27 @@ footer {
   box-sizing:border-box;
 }
 
+feat/contacto-v5
+.contact-section form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+ main
 .contact-section .btn {
   margin-top:12px;
   padding:10px 16px;
   border:none;
   border-radius:8px;
   cursor:pointer;
+ feat/contacto-v5
+  background: #3c4a7d;
+  color: white;
+}
+
+.success {
+  color: green;
+
+ main
 }

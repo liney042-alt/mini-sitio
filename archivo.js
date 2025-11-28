@@ -20,19 +20,58 @@ planetas.forEach(p => {
 
     contenedor.appendChild(card);
 });
+ feat/contacto-v5
+
+// ----- js contacto -----
+document.addEventListener('DOMContentLoaded', function () {
+
 // js/contact.js
 document.addEventListener('DOMContentLoaded', function () {
+ main
   const form = document.getElementById('contact-form');
   const feedback = document.getElementById('form-feedback');
 
   if (!form) return;
 
   form.addEventListener('submit', function (e) {
+ feat/contacto-v5
+    e.preventDefault();
+
+    feedback.style.display = 'block';
+    feedback.textContent = 'Mensaje enviado correctamente 😊';
+    feedback.classList.add("success");
+
+    // limpiar campos
+    form.reset();
+
+    // ocultar mensaje a los 3 segundos
+    let hideTimeout;
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // mostrar feedback
+  feedback.style.display = 'block';
+  feedback.textContent = 'Mensaje simulado enviado. Gracias 😊';
+  feedback.classList.add('success');
+
+  // limpiar timeout anterior
+  if (hideTimeout) clearTimeout(hideTimeout);
+
+  // ocultar después de 3 segundos
+  hideTimeout = setTimeout(() => {
+    feedback.style.display = 'none';
+  }, 3000);
+
+  form.reset();
+});
+
     e.preventDefault(); // sin backend, evitamos reload
     feedback.style.display = 'block';
     feedback.textContent = 'Mensaje simulado enviado. Gracias 😊';
     feedback.style.color = 'green';
     // opcional: limpiar campos
     form.reset();
+ main
   });
 });
