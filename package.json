@@ -1,0 +1,24 @@
+{
+  "name": "mini-sitio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "archivo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liney042-alt/mini-sitio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/liney042-alt/mini-sitio/issues"
+  },
+  "homepage": "https://github.com/liney042-alt/mini-sitio#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}

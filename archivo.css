@@ -1,83 +1,90 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0a0f24;
-    color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a0f24;
+  color: white;
 }
 
 header {
-    text-align: center;
-    padding: 30px;
-    background: #131a33;
-    border-bottom: 2px solid #3c4a7d;
+  text-align: center;
+  padding: 30px;
+  background: #131a33;
+  border-bottom: 2px solid #3c4a7d;
 }
 
 .planetas-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
 }
 
 .card {
-    background: #1c2444;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    border: 1px solid #3c4a7d;
-    box-shadow: 0px 0px 10px rgba(255,255,255,0.1);
-    transition: transform .3s;
+  background: #1c2444;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #3c4a7d;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card h3 {
-    margin: 0 0 10px;
-    color: #a8c2ff;
+  margin: 0 0 10px;
+  color: #a8c2ff;
 }
 
 footer {
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    background: #131a33;
-    border-top: 2px solid #3c4a7d;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background: #131a33;
+  border-top: 2px solid #3c4a7d;
 }
- feat/contacto-v5
- main
+
 /* -- estilos sección contacto -- */
 .contact-section {
   padding: 40px 16px;
   background: #f9f9fb;
- feat/contacto-v5
   color: #000;
- main
 }
 
-.contact-section .container { max-width: 900px; margin: 0 auto; }
+.contact-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+ 
+.contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
 
 .contact-section h2 { font-size: 1.8rem; margin-bottom: 8px; }
 feat/contacto-v5
 
-.contact-section label { 
-  display:block; 
-  margin-top:12px; 
-  font-weight:600; 
+
+.contact-section label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
 }
 
 .contact-section label { display:block; margin-top:12px; font-weight:600; }
  main
 .contact-section input,
 .contact-section textarea {
-  width:100%;
-  padding:10px;
-  margin-top:6px;
-  border:1px solid #ddd;
-  border-radius:6px;
-  box-sizing:border-box;
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 feat/contacto-v5
@@ -89,12 +96,17 @@ feat/contacto-v5
 }
  main
 .contact-section .btn {
+
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   margin-top:12px;
   padding:10px 16px;
   border:none;
   border-radius:8px;
   cursor:pointer;
- feat/contacto-v5
   background: #3c4a7d;
   color: white;
 }
@@ -102,5 +114,5 @@ feat/contacto-v5
 .success {
   color: green;
 
- main
+ 
 }
